@@ -1,0 +1,132 @@
+.main {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/652/259/663/line-design-abstraction-background-blue-hd-wallpaper-preview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  height: 605px;
+  width: 30%;
+  padding-top: 30px;
+  border-radius: 60px;
+  background-color: white;
+}
+
+.imgss {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.container-image {
+  background-color: rgb(223, 221, 221);
+  border-radius: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  width: 115px;
+}
+
+.profile {
+  height: 150px;
+  width: 150px;
+}
+
+.name {
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 25px 0px rgb(98, 132, 166);
+  border: none;
+  outline: none;
+  background-color: white
+}
+
+.email {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  padding: 14px 0 0 25px;
+}
+
+.name {
+  padding-left: 70px;
+  font-size: 20px;
+}
+
+.second-input {
+  padding-top: 20px;
+}
+
+.check {
+  width: 380px;
+  height: 50px;
+  border-radius: 60px;
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  border: none;
+  transition: 0.5s;
+}
+
+.check:hover {
+  background-color: yellow;
+  color: rgba(15, 126, 229, 0.921);
+  box-shadow: 0 0 20px rgba(5, 52, 95, 0.921),
+    0 0 40px rgba(2, 18, 33, 0.921);
+  cursor: pointer;
+
+}
+
+.login-button {
+  padding-top: 50px;
+
+}
+
+.link {
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+a {
+  color: rgba(15, 126, 229, 0.921);
+}
+
+@media screen and (max-width: 1150px) {
+
+  .name,
+  .check {
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .email {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .name,
+  .check {
+    width: 30%;
+    text-align: center;
+  }
+
+  .first-input,
+  .second-input {
+    font-size: 9px;
+    padding: 5px;
+    text-align: center;
+  }
+}
