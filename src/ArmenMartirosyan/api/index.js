@@ -29,8 +29,8 @@ export const createData = async ({ userData }) => {
 //UPDATE
 
 export const putData = async (id5) => {//այստեղ id5-ի փոխարեն կարող էր ցանկացած այլ անուն լինել
-    console.log(id5, 1111);
-    await axios.put(`http://localhost:3200/workers/${id5.editedData.id}`,//`http://localhost:3200/workers/${editedData[editTableUserData.userIndex].id}`
+    // console.log(id5, 1111);
+    await axios.put(`http://localhost:3200/workers/${id5.editedData.id}`,
         {
             headers: {
                 "Content-Type": "application/json"
