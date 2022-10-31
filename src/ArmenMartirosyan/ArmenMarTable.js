@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./ArmenMarTable.css";
 import { Link } from "react-router-dom";
-import { getDataPlayer, deleteDataPlayer, postDataPlayer } from "./redux/actions/getApi";
+import { getDataPlayer, deleteDataPlayer, postDataPlayer, putDataPlayer } from "./redux/actions/getApi";
 import { useSelector, useDispatch } from 'react-redux'
 
 // initial state-սկզբնական վիճակն է
@@ -49,14 +49,10 @@ function ArmenMarTable() {
           isEdit: false,
           userIndex: null
         })
+
         //UPDATE-backend-ի հետ կապ
-        fetch(`http://localhost:3200/workers/${editedData[editTableUserData.userIndex].id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(userData)
-        })
+
+        dispatch(putDataPlayer({ userData2: userData, id: editedData[editTableUserData.userIndex].id }))
 
         //CREATE-backend-ի հետ կապ
       } else {

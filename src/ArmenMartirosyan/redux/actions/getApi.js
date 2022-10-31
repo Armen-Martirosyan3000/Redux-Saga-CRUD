@@ -22,3 +22,11 @@ export const postDataPlayer = (payload) => ({
     userData: payload,
 });
 
+
+//UPDATE
+
+export const putDataPlayer = (payload) => ({//=>console.log(payload, 888) || ({
+    type: "UPDATE_DATA",
+    editedData: payload,
+});
+

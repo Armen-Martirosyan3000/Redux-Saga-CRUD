@@ -14,7 +14,7 @@ const composeEnhancers =
 
 const configureStore = preloadedState => createStore(
     reducer,
-     preloadedState,
+    preloadedState,
     composeEnhancers(applyMiddleware(sagaMiddleware)),
 )
 

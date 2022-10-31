@@ -14,6 +14,9 @@ const getPlayer = (state = initialState, { type, payload }) => {
         //CREATE
         case "CREATE_DATA":
             return { ...state, players: payload }
+        //UPDATE
+        case "UPDATE_DATA":
+            return { ...state, players: payload }
 
         default:
             return state;
