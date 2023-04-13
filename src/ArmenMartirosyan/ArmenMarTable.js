@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { getDataPlayer, deleteDataPlayer, postDataPlayer, putDataPlayer } from "./redux/actions/getApi";
 import { useSelector, useDispatch } from 'react-redux'
 
-// initial state-սկզբնական վիճակն է
+//initial state-սկզբնական վիճակն է
 const initialValues = {
   name: "",
   surname: "",

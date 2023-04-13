@@ -1,4 +1,4 @@
-//READ
+// READ
 export const getDataPlayer = () => ({
     type: "FETCH_DATA"
 });
@@ -9,21 +9,21 @@ export const setDataPlayer = (payload) => ({
 });
 
 
-//DELETE
+// DELETE
 export const deleteDataPlayer = (payload) => ({
     type: "DELETE_DATA",
     id: payload,
 });
 
 
-//CREATE
+// CREATE
 export const postDataPlayer = (payload) => ({
     type: "CREATE_DATA",
     userData: payload,
 });
 
 
-//UPDATE
+// UPDATE
 
 export const putDataPlayer = (payload) => ({//=>console.log(payload, 888) || ({
     type: "UPDATE_DATA",
